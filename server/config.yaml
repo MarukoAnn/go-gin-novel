@@ -1,0 +1,24 @@
+# 未初始化之前请勿手动修改数据库信息！！！如果一定要手动初始化请看（https://gin-vue-admin.com/docs/first_master）
+mysql:
+  path: "localhost"
+  port: "3306"
+  config: ""
+  dbname: "go-colly"
+  username: "root"
+  password: "123456"
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: ""
+  log-zap: false
+
+# system configuration
+system:
+  env: public # Change to "develop" to skip authentication for development mode
+  db_type: "mysql"
+
+# zap logger config
+zap:
+  level: info
+  format: console
+  prefix: "[go-gin/server]"
+  director: log
